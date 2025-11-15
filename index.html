@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DentistYa - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="img/logo.avif" alt="DentistYa" />
+                <span>DentistYa</span>
+            </a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-links" id="navbarLinks">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="secciones/acercade.html">Acerca de Nosotros</a></li>
+                <li><a href="secciones/servicios.html">Servicios</a></li>
+                <li><a href="secciones/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <h1>Bienvenido a DentistYa</h1>
+        <p>Tu sonrisa, nuestra pasión. Descubre la mejor atención odontológica con tecnología de punta y un equipo humano excepcional.</p>
+        <a href="secciones/contacto.html" class="btn-hero">¡Agenda tu cita!</a>
+    </header>
+    <section class="destacado">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="img/atencion.png" alt="Personalizada" style="width:250px; border-radius: 12px;">
+                <h3>Atención personalizada</h3>
+                <p>Nos enfocamos en cada paciente, adaptando los tratamientos a sus necesidades y expectativas.</p>
+            </div>
+            <div class="feature">
+                <img src="img/tecnologia.png" alt="Tecnología" style="width:250px; border-radius: 12px;">
+                <h3>Tecnología avanzada</h3>
+                <p>Contamos con equipos de última generación para diagnósticos precisos y tratamientos efectivos.</p>
+            </div>
+            <div class="feature">
+                <img src="img/ambiente.jpg" alt="Ambiente" style="width:250px; border-radius: 12px;">
+                <h3>Ambiente cálido y seguro</h3>
+                <p>Te ofrecemos instalaciones modernas y un equipo humano que te hará sentir como en casa.</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonio-carousel">
+            <button class="carousel-btn prev"></button>
+            <div class="testimonio-list">
+                <div class="testimonio active">
+                    <img src="img/chica1.jpg" alt="Laura G." class="testimonio-avatar">
+                    <p>"Me devolvieron la confianza para sonreír. ¡Excelente atención!"</p>
+                    <span>- Laura G.</span>
+                </div>
+                <div class="testimonio">
+                    <img src="img/chico.jpg" alt="Carlos M." class="testimonio-avatar">
+                    <p>"El equipo es muy profesional y amable. Recomiendo DentistYa."</p>
+                    <span>- Carlos M.</span>
+                </div>
+                <div class="testimonio">
+                    <img src="img/chica2.avif" alt="Sofía R." class="testimonio-avatar">
+                    <p>"La clínica es moderna y los tratamientos son efectivos."</p>
+                    <span>- Bbesaurio#SSJ.</span>
+                </div>
+            </div>
+            <button class="carousel-btn next"></button>
+        </div>
+    </section>
+    <section class="equipo">
+        <h2>Conoce a nuestro equipo</h2>
+        <div class="equipo-list">
+            <div class="equipo-item">
+                <img src="img/dentistaH1.jpg" alt="Dr. Juan Pérez">
+                <h4>Dr. Juan Pérez</h4>
+                <p>Especialista en Implantología</p>
+            </div>
+            <div class="equipo-item">
+                <img src="img/dentistaM.jpg" alt="Dra. María López">
+                <h4>Dra. María López</h4>
+                <p>Ortodoncia y Estética Dental</p>
+            </div>
+            <div class="equipo-item">
+                <img src="img/dentistaH2.jpg" alt="Dr. Carlos Ruiz">
+                <h4>Dr. Carlos Ruiz</h4>
+                <p>Odontopediatría</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo.avif" alt="DentistYa" style="height:50px;">
+            </div>
+            <div class="footer-info">
+                <p><strong>Dirección:</strong> Yanez Pinzón y Avenida Cristobal Colón</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+593979017059" style="color:white;text-decoration:none;">+593 97 901 7059</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@dentistya.com" style="color:white;text-decoration:none;">info@dentistya.com</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="#" title="Instagram" class="footer-icon">
+                    <img src="../img/instagram.png" alt="Instagram" style="height:35px;">
+                </a>
+                <a href="#" title="Facebook" class="footer-icon">
+                    <img src="../img/facebook.png" alt="Facebook" style="height:35px;">
+                </a>
+                <a href="#" title="WhatsApp" class="footer-icon">
+                    <img src="../img/whats.png" alt="WhatsApp" style="height:35px;">
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 DentistYa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
