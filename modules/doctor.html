@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Doctor | DentistYa</title>
+    <link rel="stylesheet" href="css/doctor.css">
+</head>
+<body>
+    <div class="doctor-header">
+        <span class="doctor-title">Panel del Doctor</span>
+        <button id="btnCerrarSesion" class="cerrar-sesion">Cerrar sesión</button>
+    </div>
+
+    <!-- Fase 1: Selección de opción -->
+    <div id="fase1" class="fase">
+        <h2>¿Qué deseas consultar?</h2>
+        <div class="doctor-opciones">
+            <button class="btn-opcion" data-fase="historial">Historial de pacientes</button>
+            <button class="btn-opcion" data-fase="citas">Citas pendientes</button>
+            <button class="btn-opcion" data-fase="material">Material disponible</button>
+        </div>
+    </div>
+
+    <!-- Fase 2: Historial de pacientes -->
+    <div id="faseHistorial" class="fase" style="display:none;">
+        <h2>Historial de pacientes</h2>
+        <div class="tabla-container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cédula</th>
+                        <th>Diagnóstico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>María</td>
+                        <td>García</td>
+                        <td>1726159211</td>
+                        <td>Caries dental</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>1726159222</td>
+                        <td>Ortodoncia</td>
+                    </tr>
+                    <tr>
+                        <td>Lucía</td>
+                        <td>Martínez</td>
+                        <td>1726159233</td>
+                        <td>Implante dental</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandro</td>
+                        <td>Bedoya</td>
+                        <td>1726159260</td>
+                        <td>Ruptura de Muela y extracción de molares inferiores</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn-volver">Volver</button>
+    </div>
+
+    <!-- Fase 2: Citas pendientes -->
+    <div id="faseCitas" class="fase" style="display:none;">
+        <h2>Citas pendientes</h2>
+        <div class="tabla-container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Hora</th>
+                        <th>Servicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>María</td>
+                        <td>García</td>
+                        <td>09:00</td>
+                        <td>Ortodoncia</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>10:30</td>
+                        <td>Implante dental</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandro</td>
+                        <td>Bedoya</td>
+                        <td>12:00</td>
+                        <td>Limpieza dental</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn-volver">Volver</button>
+    </div>
+
+    <!-- Fase 2: Material disponible -->
+    <div id="faseMaterial" class="fase" style="display:none;">
+        <h2>Material disponible</h2>
+        <div class="tabla-container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Guantes</td>
+                        <td>50</td>
+                        <td class="ok">Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Mascarillas</td>
+                        <td>10</td>
+                        <td class="escaso">Escaso</td>
+                    </tr>
+                    <tr>
+                        <td>Resina dental</td>
+                        <td>3</td>
+                        <td class="escaso">Escaso</td>
+                    </tr>
+                    <tr>
+                        <td>Algodón</td>
+                        <td>100</td>
+                        <td class="ok">Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Anestesia</td>
+                        <td>5</td>
+                        <td class="escaso">Escaso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn-volver">Volver</button>
+    </div>
+
+    <script src="js/doctor.js"></script>
+</body>
+</html>

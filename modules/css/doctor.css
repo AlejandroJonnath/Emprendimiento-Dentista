@@ -1,0 +1,142 @@
+body {
+    background: linear-gradient(120deg, #0077b6 0%, #90e0ef 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.doctor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px 0 40px;
+}
+
+.doctor-title {
+    color: #0077b6;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cerrar-sesion {
+    background: #ef233c;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 22px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cerrar-sesion:hover {
+    background: #d90429;
+}
+
+.fase {
+    background: #fff;
+    padding: 40px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0, 119, 182, 0.15);
+    min-width: 340px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+h2 {
+    color: #0077b6;
+    margin-bottom: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.doctor-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+
+.btn-opcion {
+    background: linear-gradient(90deg, #0077b6 60%, #00b4d8 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 16px 0;
+    width: 80%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-opcion:hover {
+    background: linear-gradient(90deg, #023e8a 60%, #0096c7 100%);
+}
+
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #90e0ef;
+    padding: 10px 8px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.tabla th {
+    background: #90e0ef;
+    color: #023e8a;
+}
+
+.ok {
+    color: #38b000;
+    font-weight: bold;
+}
+
+.escaso {
+    color: #ef233c;
+    font-weight: bold;
+}
+
+.btn-volver {
+    background: #90e0ef;
+    color: #023e8a;
+    border: none;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-volver:hover {
+    background: #0077b6;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .doctor-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 10px 0 10px;
+    }
+    .fase {
+        padding: 18px 6px;
+        min-width: 95vw;
+    }
+    .btn-opcion {
+        width: 100%;
+    }
+}

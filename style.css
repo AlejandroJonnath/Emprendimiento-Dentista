@@ -858,3 +858,18 @@ footer {
     background: var(--primary);
     transform: scale(1.05);
 }
+
+.navbar-login-btn {
+    margin-left: 20px;
+    padding: 8px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.navbar-login-btn:hover {
+    background-color: #023e8a;
+}

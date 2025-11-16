@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(120deg, #0077b6 0%, #90e0ef 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fase {
+    background: #fff;
+    padding: 40px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0, 119, 182, 0.15);
+    min-width: 340px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    color: #0077b6;
+    margin-bottom: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.servicios-lista label,
+.doctores-lista label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.horario {
+    color: #0096c7;
+    font-size: 0.95em;
+}
+
+.btn-principal {
+    background: linear-gradient(90deg, #0077b6 60%, #00b4d8 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 0;
+    width: 100%;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-principal:hover {
+    background: linear-gradient(90deg, #023e8a 60%, #0096c7 100%);
+}
+
+.btn-secundario {
+    background: #90e0ef;
+    color: #023e8a;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 119, 182, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,119,182,0.18);
+    text-align: center;
+    min-width: 280px;
+}
+
+.modal-verde .modal-content {
+    background: #d1f7c4;
+    border: 2px solid #38b000;
+    color: #14532d;
+}
+
+@media (max-width: 500px) {
+    .fase {
+        padding: 28px 12px;
+        min-width: 90vw;
+    }
+    .modal-content {
+        padding: 18px 8px;
+        min-width: 90vw;
+    }
+}

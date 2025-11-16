@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendar Cita | DentistYa</title>
+    <link rel="stylesheet" href="css/paciente.css">
+</head>
+<body>
+    <div id="fase1" class="fase">
+        <h2>Selecciona un servicio</h2>
+        <div class="servicios-lista">
+            <label><input type="radio" name="servicio" value="Limpieza Dental"> Limpieza Dental</label>
+            <label><input type="radio" name="servicio" value="Blanqueamiento Dental"> Blanqueamiento Dental</label>
+            <label><input type="radio" name="servicio" value="Ortodoncia"> Ortodoncia</label>
+            <label><input type="radio" name="servicio" value="Implantes Dentales"> Implantes Dentales</label>
+            <label><input type="radio" name="servicio" value="Endodoncia"> Endodoncia</label>
+            <label><input type="radio" name="servicio" value="Estética Dental"> Estética Dental</label>
+            <label><input type="radio" name="servicio" value="Odontopediatría"> Odontopediatría</label>
+            <label><input type="radio" name="servicio" value="Prótesis Dental"> Prótesis Dental</label>
+        </div>
+        <button id="btnSiguiente" class="btn-principal">Siguiente</button>
+    </div>
+
+    <div id="fase2" class="fase" style="display:none;">
+        <h2>Selecciona Doctor y Horario</h2>
+        <div class="doctores-lista">
+            <label>
+                <input type="radio" name="doctor" value="Dr. Juan Pérez">
+                Dr. Juan Pérez <br>
+                <span class="horario">Lunes a Viernes: 08:00 - 12:00</span>
+            </label>
+            <label>
+                <input type="radio" name="doctor" value="Dra. María López">
+                Dra. María López <br>
+                <span class="horario">Lunes a Viernes: 13:00 - 17:00</span>
+            </label>
+            <label>
+                <input type="radio" name="doctor" value="Dr. Carlos Ruiz">
+                Dr. Carlos Ruiz <br>
+                <span class="horario">Lunes a Viernes: 09:00 - 13:00</span>
+            </label>
+        </div>
+        <button id="btnConfirmar" class="btn-principal">Confirmar</button>
+    </div>
+
+    <!-- Modal de confirmación fase 2 -->
+    <div id="modalConfirmar" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h3>¿Estás seguro de querer continuar?</h3>
+            <button id="btnModalSi" class="btn-principal">Sí, continuar</button>
+            <button id="btnModalNo" class="btn-secundario">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Modal de cita confirmada fase 3 -->
+    <div id="modalCita" class="modal modal-verde" style="display:none;">
+        <div class="modal-content">
+            <h3>Su cita fue confirmada</h3>
+            <div id="datosCita"></div>
+            <button id="btnIrInicio" class="btn-principal">Ir al inicio</button>
+        </div>
+    </div>
+
+    <script src="js/paciente.js"></script>
+</body>
+</html>

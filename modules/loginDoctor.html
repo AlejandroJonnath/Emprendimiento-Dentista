@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Doctor | DentistYa</title>
+    <link rel="stylesheet" href="css/logindoctor.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <img src="../img/logo.avif" alt="DentistYa" class="login-logo">
+            <h2>Ingreso Doctor</h2>
+            <form>
+                <div class="input-group">
+                    <label for="correo">Correo institucional</label>
+                    <input type="email" id="correo" name="correo" placeholder="doctor@dentistya.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                </div>
+                <button type="submit" class="login-btn" formaction="doctor.html">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    <div id="notificacion-validando" class="notificacion-validando" style="display:none;">
+        <div class="notificacion-content">
+            <span class="loader"></span>
+            <span class="texto">Validando datos...</span>
+        </div>
+    </div>
+    <div id="modal-error" class="modal-error" style="display:none;">
+        <div class="modal-error-content">
+            <span class="modal-error-icon">✖</span>
+            <span class="modal-error-texto">Credenciales incorrectas. Intenta de nuevo.</span>
+            <button id="cerrar-error" class="modal-error-btn">Cerrar</button>
+        </div>
+    </div>
+</body>
+
+<script src="js/logindoctor.js"></script>
+</html>
